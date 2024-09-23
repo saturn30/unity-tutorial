@@ -4,13 +4,32 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    [SerializeField]
-    private float moveSpeed;
+    [SerializeField] private float moveSpeed;
+
+    [SerializeField] private GameObject weapon;
+
+    [SerializeField] private Transform shootTransform;
+
+    [SerializeField] private float shootInterval = 0.1f;
+    private float lastShotTime = 0f;
+
     // Update is called once per frame
     void Update()
     {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         float toX = Mathf.Clamp(mousePos.x, -2.8f, 2.8f);
         transform.position = new Vector3(toX, transform.position.y);
+
+        Shoot();
+    }
+
+    void Shoot()
+    {
+        if (Time.time - lastShotTime > shootInterval)
+        {
+
+            Instantiate(weapon, shootTransform.position, Quaternion.identity);
+            lastShotTime = Time.time;
+        }
     }
 }
