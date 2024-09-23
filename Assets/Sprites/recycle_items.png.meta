@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 28
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -134,7 +134,343 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: recycle_items_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 15
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a511c125f8d459b95a58d23575d676
+      internalID: -155393401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recycle_items_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 2
+        width: 39
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee6ddbe74c9d49f2b9b99ec014f9eda
+      internalID: 516125229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recycle_items_2
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 2
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e499152ed5a9641ce9753c2d16afa464
+      internalID: -1517243620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recycle_items_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 2
+        width: 51
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46caf2bfbac8141b9a39c4e8181c33cb
+      internalID: 2029122387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recycle_items_4
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 2
+        width: 53
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e7769789154b48eeaf9b0b4ee3554a8
+      internalID: 46191227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recycle_items_5
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 2
+        width: 35
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd26c9fbc4353429284f02114385b780
+      internalID: -57948061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recycle_items_6
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 2
+        width: 17
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a444eb104612246f4b6dc2dfd3b2d7ee
+      internalID: 419643183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recycle_items_7
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 2
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926a782315e664d1199d55d15ed27b5f
+      internalID: 1300771396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recycle_items_8
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 2
+        width: 16
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a27058aeb214765af75fd0da52fdc2
+      internalID: -1715865014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recycle_items_9
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 2
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae472d5f880e34743b1ce45bf7e41b33
+      internalID: 360058210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recycle_items_10
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 2
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f364e8bee85714e89824a5aa63776d7e
+      internalID: -1111845402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recycle_items_11
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 2
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d44da620af7416ba760474fe30a16a
+      internalID: -1901369761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recycle_items_12
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 2
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39fe6a07d255640a1952bbf14c570a98
+      internalID: -1224477981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recycle_items_13
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 2
+        width: 60
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c53f65b247f14a06bf920b064f807e5
+      internalID: 1351019355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recycle_items_14
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 2
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515d72c7eade44738a2966b502d72869
+      internalID: -1994620417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recycle_items_15
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 2
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a1d43def83c44d382b3614dfaec2a3
+      internalID: -576368627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +481,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      recycle_items_0: -155393401
+      recycle_items_1: 516125229
+      recycle_items_10: -1111845402
+      recycle_items_11: -1901369761
+      recycle_items_12: -1224477981
+      recycle_items_13: 1351019355
+      recycle_items_14: -1994620417
+      recycle_items_15: -576368627
+      recycle_items_2: -1517243620
+      recycle_items_3: 2029122387
+      recycle_items_4: 46191227
+      recycle_items_5: -57948061
+      recycle_items_6: 419643183
+      recycle_items_7: 1300771396
+      recycle_items_8: -1715865014
+      recycle_items_9: 360058210
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
