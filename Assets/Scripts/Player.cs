@@ -42,8 +42,8 @@ public class NewBehaviourScript : MonoBehaviour
             Destroy(other.gameObject);
             if (hp <= 0)
             {
-                Debug.Log("게임 종료");
                 Destroy(gameObject);
+                GameManager.instance.SetGameOver();
 
             }
         }

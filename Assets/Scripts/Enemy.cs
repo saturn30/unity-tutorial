@@ -43,7 +43,7 @@ public class Enemy : MonoBehaviour
                 Instantiate(coin, transform.position, Quaternion.identity);
                 if (gameObject.tag == "Boss")
                 {
-                    Debug.Log("게임 종료");
+                    GameManager.instance.SetGameOver();
                 }
 
             }
