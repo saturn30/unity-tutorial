@@ -11,6 +11,7 @@ public class NewBehaviourScript : MonoBehaviour
     [SerializeField] private Transform shootTransform;
 
     [SerializeField] private float shootInterval = 0.1f;
+    [SerializeField] private float hp = 1f;
     private float lastShotTime = 0f;
 
     // Update is called once per frame
@@ -30,6 +31,15 @@ public class NewBehaviourScript : MonoBehaviour
 
             Instantiate(weapon, shootTransform.position, Quaternion.identity);
             lastShotTime = Time.time;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            Debug.Log("게임 종료");
+            Destroy(gameObject);
         }
     }
 }
