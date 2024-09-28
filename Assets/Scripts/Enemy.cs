@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     private Camera mainCamera;
     private Renderer objectRenderer;
     [SerializeField] float moveSpeed = 5f;
+    [SerializeField] float hp = 1f;
     public void SetMoveSpeed(float moveSpeed)
     {
         this.moveSpeed = moveSpeed;
@@ -21,11 +22,25 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         transform.position += Vector3.down * moveSpeed * Time.deltaTime;
-
         Vector3 viewportPosition = mainCamera.WorldToViewportPoint(transform.position + objectRenderer.bounds.size / 2);
         if (viewportPosition.y < 0)
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        // other.gameObject === 충돌한 게임 객체
+        if (other.gameObject.tag == "Weapon")
+        {
+            Weapon weapon = other.GetComponent<Weapon>();
+            hp -= weapon.damage;
+            if (hp <= 0)
+            {
+                Destroy(gameObject);
+            }
+            Destroy(other.gameObject);
         }
     }
 }

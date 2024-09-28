@@ -31,8 +31,6 @@ public class EnemySpawner : MonoBehaviour
         while (true)
         {
             int enemiesCount = Random.Range(1, arrPos.Length - 1);
-            Debug.Log("hello");
-            Debug.Log(randomSelector.GetRandomElements(arrPos, enemiesCount));
             foreach (float posX in randomSelector.GetRandomElements(arrPos, enemiesCount))
             {
                 int index = Random.Range(0, enemies.Length);
