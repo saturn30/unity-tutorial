@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,8 +7,8 @@ public class NewBehaviourScript : MonoBehaviour
 {
     [SerializeField] private float moveSpeed;
 
-    [SerializeField] private GameObject weapon;
-
+    [SerializeField] private GameObject[] weapons;
+    private int weaponIndex = 0;
     [SerializeField] private Transform shootTransform;
 
     [SerializeField] private float shootInterval = 0.1f;
@@ -28,8 +29,7 @@ public class NewBehaviourScript : MonoBehaviour
     {
         if (Time.time - lastShotTime > shootInterval)
         {
-
-            Instantiate(weapon, shootTransform.position, Quaternion.identity);
+            Instantiate(weapons[weaponIndex], shootTransform.position, Quaternion.identity);
             lastShotTime = Time.time;
         }
     }
@@ -43,8 +43,24 @@ public class NewBehaviourScript : MonoBehaviour
         }
         else if (other.gameObject.tag == "Coin")
         {
-            GameManager.instance.IncreaseCoin();
+            int totalCoin = GameManager.instance.IncreaseCoin();
+            UpgradeWeapon(totalCoin);
             Destroy(other.gameObject);
         }
+    }
+
+    private void UpgradeWeapon(int coin)
+    {
+        if (coin >= 15)
+        {
+            weaponIndex = Math.Min(2, weapons.Length);
+            return;
+        }
+        if (coin >= 5)
+        {
+            weaponIndex = Math.Min(1, weapons.Length);
+            return;
+        }
+        weaponIndex = Math.Min(0, weapons.Length);
     }
 }

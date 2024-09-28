@@ -18,9 +18,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void IncreaseCoin()
+    public int IncreaseCoin()
     {
         coin += 1;
         text.SetText(coin.ToString());
+        return coin;
     }
 }
