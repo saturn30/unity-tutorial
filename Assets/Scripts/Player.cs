@@ -41,5 +41,10 @@ public class NewBehaviourScript : MonoBehaviour
             Debug.Log("게임 종료");
             Destroy(gameObject);
         }
+        else if (other.gameObject.tag == "Coin")
+        {
+            Debug.Log("Coin +1");
+            Destroy(other.gameObject);
+        }
     }
 }

@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     private Renderer objectRenderer;
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float hp = 1f;
+    [SerializeField] GameObject coin;
     public void SetMoveSpeed(float moveSpeed)
     {
         this.moveSpeed = moveSpeed;
@@ -39,6 +40,8 @@ public class Enemy : MonoBehaviour
             if (hp <= 0)
             {
                 Destroy(gameObject);
+                Instantiate(coin, transform.position, Quaternion.identity);
+
             }
             Destroy(other.gameObject);
         }
