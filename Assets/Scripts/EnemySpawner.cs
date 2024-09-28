@@ -7,6 +7,7 @@ public class EnemySpawner : MonoBehaviour
 {
     private float[] arrPos;
     [SerializeField] private GameObject[] enemies;
+    [SerializeField] private GameObject boss;
     [SerializeField] private float spawnInterval = 1.5f;
     RandomSelector randomSelector = new RandomSelector();
 
@@ -37,6 +38,12 @@ public class EnemySpawner : MonoBehaviour
                 SpawnEnemy(posX, index, moveSpeed + spawnCount * 0.5f);
             }
             spawnCount += 1;
+
+            if (spawnCount >= 20)
+            {
+                SpawnBoss();
+                break;
+            }
             yield return new WaitForSeconds(spawnInterval);
         }
     }
@@ -65,4 +72,8 @@ public class EnemySpawner : MonoBehaviour
         enemy.SetMoveSpeed(moveSpeed);
     }
 
+    void SpawnBoss()
+    {
+        Instantiate(boss, transform.position, Quaternion.identity);
+    }
 }

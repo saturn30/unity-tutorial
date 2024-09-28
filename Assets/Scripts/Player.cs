@@ -12,7 +12,7 @@ public class NewBehaviourScript : MonoBehaviour
     [SerializeField] private Transform shootTransform;
 
     [SerializeField] private float shootInterval = 0.1f;
-    [SerializeField] private float hp = 1f;
+    [SerializeField] private float hp = 3f;
     private float lastShotTime = 0f;
 
     // Update is called once per frame
@@ -36,10 +36,16 @@ public class NewBehaviourScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Enemy")
+        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Boss")
         {
-            Debug.Log("게임 종료");
-            Destroy(gameObject);
+            hp -= 1f;
+            Destroy(other.gameObject);
+            if (hp <= 0)
+            {
+                Debug.Log("게임 종료");
+                Destroy(gameObject);
+
+            }
         }
         else if (other.gameObject.tag == "Coin")
         {
